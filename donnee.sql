@@ -1,13 +1,13 @@
-INSERT INTO client (nom, email, telephone, adresse)
-VALUES 
-  ('Jean Dupont', 'jean.dupont@example.com', '+33601020304', '10 Rue de Paris, 75001 Paris'),
-  ('Marie Curie', 'marie.curie@example.com', '+33611223344', '15 Avenue Victor Hugo, 75016 Paris'),
-  ('Ali Ben Youssef', 'ali.youssef@example.com', '+212612345678', 'Quartier Agdal, Rabat, Maroc'),
-  ('Lina Rasoanaivo', 'lina.rasoanaivo@example.mg', '+261320000001', 'Lot II F 45, Antananarivo, Madagascar'),
-  ('Carlos Mendoza', 'carlos.mendoza@example.es', '+34612345678', 'Calle Mayor 23, Madrid, Espagne');
+  INSERT INTO client (nom_client, email, telephone, adresse)
+  VALUES 
+    ('Jean Dupont', 'jean.dupont@example.com', '+33601020304', '10 Rue de Paris, 75001 Paris'),
+    ('Marie Curie', 'marie.curie@example.com', '+33611223344', '15 Avenue Victor Hugo, 75016 Paris'),
+    ('Ali Ben Youssef', 'ali.youssef@example.com', '+212612345678', 'Quartier Agdal, Rabat, Maroc'),
+    ('Lina Rasoanaivo', 'lina.rasoanaivo@example.mg', '+261320000001', 'Lot II F 45, Antananarivo, Madagascar'),
+    ('Carlos Mendoza', 'carlos.mendoza@example.es', '+34612345678', 'Calle Mayor 23, Madrid, Espagne');
 
 
-INSERT INTO type_pret (nom, taux_interet, duree_mois, montant_min, montant_max)
+INSERT INTO type_pret (nom_type_pret, taux_interet, duree_mois, montant_min, montant_max)
 VALUES
   ('Prêt Personnel', 5.50, 24, 1000.00, 20000.00),
   ('Prêt Immobilier', 3.20, 240, 50000.00, 500000.00),
@@ -15,7 +15,7 @@ VALUES
   ('Microcrédit', 7.00, 12, 100.00, 1500.00);
 
 
-INSERT INTO statut_pret (nom) VALUES
+INSERT INTO statut_pret (libelle) VALUES
   ('En cours'),   -- id = 1
   ('Terminé'),    -- id = 2
   ('En retard');  -- id = 3

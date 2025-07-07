@@ -10,12 +10,8 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">E-Varotra</a>
                 <ul class="menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#categorie1">Catégorie 1</a></li>
-                    <li><a href="#categorie2">Catégorie 2</a></li>
-                    <li><a href="#categorie3">Catégorie 3</a></li>
+                    <li><a href="/pret/list">Pret</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,9 +20,5 @@
     <main>
         <?php include($page.'.php'); ?>
     </main>
-
-    <footer>
-        <p>&copy; 2024 E-Varotra</p>
-    </footer>
 </body>
 </html>
